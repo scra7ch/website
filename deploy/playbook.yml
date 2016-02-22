@@ -1,0 +1,32 @@
+---
+
+- hosts: all
+  user: ubuntu
+
+  vars:
+    home_dir: /home/{{ ansible_ssh_user }}
+
+    # app
+    repo: git@github.com:scra7ch/website.git
+    slug: scratch-website
+    path: '{{ home_dir }}/www/izolate/{{ slug }}'
+    version: master
+    task: npm run build
+
+  tasks:
+    - name: Clone the repo version
+      git:
+        repo: '{{ repo }}'
+        dest: '{{ path }}'
+        version: '{{ version }}'
+        accept_hostkey: True
+
+    - name: Do npm install
+      npm:
+        path: '{{ path }}'
+
+    - name: Run build tasks
+      shell: '{{ task }}'
+      args:
+        chdir: '{{ path }}'
+        executable: /bin/bash

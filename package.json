@@ -10,7 +10,7 @@
     "css:dev": "postcss --use postcss-cssnext --use autoprefixer --use postcss-font-magician -o static/dist/index.css static/css/index.css",
     "css:prd": "postcss --use postcss-cssnext --use autoprefixer --use postcss-font-magician --use cssnano -o static/dist/index.css static/css/index.css",
     "js:dev": "browserify --debug -t babelify static/js/index.js > static/dist/index.js",
-    "js:prd": "browserify -t babelify static/js/index.js > static/dist/index.js"
+    "js:prd": "browserify -t babelify -t uglifyify static/js/index.js > static/dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
     "postcss-cssnext": "^2.4.0",
     "postcss-font-magician": "^1.4.0",
     "pug-cli": "0.0.0",
-    "scrolltop": "0.0.1"
+    "scrolltop": "0.0.1",
+    "uglifyify": "^3.0.1"
   }
 }

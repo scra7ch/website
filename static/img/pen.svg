@@ -16,6 +16,15 @@
 		<polyline fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 		20.161,39.043 20.125,47.104 27.089,43.043 	"/>
 </g>
-<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M18,47c-13.499-1.136,4.65-13.076-9-16"/>
+<g>
+	<g>
+		<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M18,47
+			c-0.354-0.029-0.685-0.066-0.996-0.111"/>
+		
+			<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.819,2.7284" d="
+			M14.385,46.152c-5.528-2.815,4.87-11.215-3.121-14.479"/>
+		<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M9.973,31.238
+			C9.668,31.153,9.344,31.074,9,31"/>
+	</g>
+</g>
 </svg>

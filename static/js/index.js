@@ -3,18 +3,19 @@
 import scrolltop from 'scrolltop'
 
 const app = document.getElementById('app')
-const heroHeader = document.querySelector('.hero h1')
+const heroHeading = document.querySelector('.hero h1')
 
 window.addEventListener('load', () => {
   app.classList.add('visible')
 })
 
 window.addEventListener('scroll', e => {
-  const scrollOffset = scrolltop()
+  const scrollPosition = scrolltop()
 
-  if (scrollOffset < window.innerHeight) {
-    const ratio = parseFloat((scrollOffset / window.innerHeight).toFixed(3))
-    heroHeader.style.opacity = 1 - ratio
-    heroHeader.style.transform = `translateY(${(1-scrollOffset)/6}px)`
+  // Hero heading parallax effect
+  if (scrollPosition < window.innerHeight) {
+    const scrollRatio = parseFloat((scrollPosition / window.innerHeight).toFixed(3))
+    heroHeading.style.opacity = (1 - scrollRatio)
+    heroHeading.style.transform = `translateY(${(1-scrollPosition)/6}px)`
   }
 })

@@ -4,12 +4,13 @@
   "description": "Website for Scratch",
   "main": "index.js",
   "scripts": {
+    "build": "npm run pug; npm run css:prd; npm run js:prd",
     "develop": "npm run pug; npm run css:dev; npm run js:dev",
     "pug": "./node_modules/pug-cli/index.js index.jade",
-    "css:dev": "postcss --use postcss-cssnext --use autoprefixer --use postcss-font-magician -o dist/index.css static/css/index.css",
-    "css:prd": "postcss --use postcss-cssnext --use autoprefixer --use postcss-font-magician --use cssnano -o dist/index.css static/css/index.css",
-    "js:dev": "browserify --debug -t babelify static/js/index.js > dist/index.js",
-    "js:prd": "browserify -t babelify static/js/index.js > dist/index.js"
+    "css:dev": "postcss --use postcss-cssnext --use autoprefixer --use postcss-font-magician -o static/dist/index.css static/css/index.css",
+    "css:prd": "postcss --use postcss-cssnext --use autoprefixer --use postcss-font-magician --use cssnano -o static/dist/index.css static/css/index.css",
+    "js:dev": "browserify --debug -t babelify static/js/index.js > static/dist/index.js",
+    "js:prd": "browserify -t babelify static/js/index.js > static/dist/index.js"
   },
   "repository": {
     "type": "git",

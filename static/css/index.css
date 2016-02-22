@@ -4,7 +4,7 @@
   --fontSizeH1: 2.75rem;
   --colorBg: #00d6be;
   --colorBodyText: #333;
-  --colorYellow: #dbe128;
+  --colorYellow: #e1ff19;
   --easeOutQuad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
@@ -66,7 +66,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url('../static/img/header.jpg') center no-repeat;
+  background: url('../img/header.jpg') center no-repeat;
   background-size: cover;
   z-index: -1;
 }
@@ -107,13 +107,14 @@ body {
 }
 
 .hero .underline--jagged::after {
+  left: -4px;
   width: 120px;
-  background-image: url('../static/img/underline-jagged.svg')
+  background-image: url('../img/underline-jagged.svg')
 }
 
 .hero .underline--straight::after {
   width: 170px;
-  background-image: url('../static/img/underline-straight.svg')
+  background-image: url('../img/underline-straight.svg')
 }
 
 .hero__logo {
@@ -130,7 +131,7 @@ body {
   width: 45px;
   height: 45px;
   margin-left: -20px;
-  background: url('../static/img/arrow.svg') center 0 no-repeat;
+  background: url('../img/arrow.svg') center 0 no-repeat;
   border: 2px dotted var(--colorYellow);
   border-radius: 50%;
   animation: shimmer .25s steps(2) infinite;
@@ -165,7 +166,7 @@ section {
   width: 100px;
   height: 40px;
   margin-left: -50px;
-  background-image: url('../static/img/how.svg');
+  background-image: url('../img/how.svg');
   background-position: center 0;
   background-repeat: no-repeat;
   animation: shimmer .25s steps(2) infinite;

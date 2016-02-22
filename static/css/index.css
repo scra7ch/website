@@ -152,7 +152,24 @@ section {
 }
 
 .about__header {
+  position: relative;
+  height: 40px;
   margin-bottom: 2em;
+}
+
+.about__header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-image: url('../static/img/how.svg');
+  background-position: center 0;
+  background-repeat: no-repeat;
+  animation: shimmer .25s steps(2) infinite;
+  transition: none;
+  transform: scale(3);
 }
 
 .about__header h2 {

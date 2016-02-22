@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Scratch - Digital Agency
+    link(rel='stylesheet', href='static/css/fonts.css')
+    link(rel='stylesheet', href='dist/index.css')
+  body
+    main#app
+      header.hero
+        img.hero__logo(src='static/img/scratch-white.svg', alt='Scratch logo')
+
+        .flex
+          h1
+            | We build products that speak 
+            span.underline.underline--jagged loudly 
+            | & with 
+            span.underline.underline--straight impact
+
+        span.hero__arrow
+
+      section.about
+        article.section__item
+          h2 Design
+        article.section__item
+          h2 Develop
+
+      section.contact
+        h2 Call me maybe
+
+      footer
+        span logo
+    script(src='dist/index.js')
+

@@ -1,0 +1,144 @@
+:root {
+  --fontFamily: 'League Spartan', 'Helvetica Neue', sans-serif;
+  --fontSizeBase: 1rem;
+  --fontSizeH1: 2.75rem;
+  --colorBg: #00d6be;
+  --colorYellow: #dbe128;
+  --easeOutQuad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSizeBase);
+  min-height: 100vh;
+  background-color: var(--colorBg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Helpers */
+.flex {
+  display: flex;
+}
+
+/* App */
+#app {
+  padding-top: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s linear;
+}
+
+#app.visible {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 1s;
+}
+
+/* Animations */
+@keyframes heroH1Enter {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  from { background-position: center 0px; }
+  to { background-position: center -80px; }
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('../static/img/header.jpg') center no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+header .flex {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  max-width: 700px;
+  font-size: var(--fontSizeH1);
+  text-align: center;
+  color: white;
+}
+
+.visible .hero h1 {
+  animation: 1s var(--easeOutQuad) 1s 1 heroH1Enter;
+}
+
+.hero h1 span {
+  position: relative;
+}
+
+.hero h1 span::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  animation: shimmer .25s steps(2) infinite;
+  transition: none;
+}
+
+.hero .underline--jagged::after {
+  width: 120px;
+  background-image: url('../static/img/underline-jagged.svg')
+}
+
+.hero .underline--straight::after {
+  width: 170px;
+  background-image: url('../static/img/underline-straight.svg')
+}
+
+.hero__logo {
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  width: 165px;
+}
+
+.hero__arrow {
+  position: absolute;
+  bottom: 3em;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  margin-left: -20px;
+  background: url('../static/img/arrow.svg') center 0 no-repeat;
+  border: 2px dotted var(--colorYellow);
+  border-radius: 50%;
+  animation: shimmer .25s steps(2) infinite;
+}
+
+section {
+  background-color: white;
+}
+
+/* About */
+.about {
+}

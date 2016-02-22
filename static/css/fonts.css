@@ -1,0 +1,11 @@
+@font-face {
+  font-family: '../static/font/ Spartan';
+  src: url('../static/font/spartan-bold.eot');
+  src: url('../static/font/spartan-bold.eot?#iefix') format('embedded-opentype'),
+        url('../static/font/spartan-bold.woff2') format('woff2'),
+        url('../static/font/spartan-bold.woff') format('woff'),
+        url('../static/font/spartan-bold.ttf') format('truetype'),
+        url('../static/font/spartan-bold.svg#../static/font/_spartanbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

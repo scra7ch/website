@@ -1,0 +1,41 @@
+{
+  "name": "scratch-website",
+  "version": "1.0.0",
+  "description": "Website for Scratch",
+  "main": "index.js",
+  "scripts": {
+    "develop": "npm run pug; npm run css:dev; npm run js:dev",
+    "pug": "./node_modules/pug-cli/index.js index.jade",
+    "css:dev": "postcss --use postcss-cssnext --use autoprefixer --use postcss-font-magician -o dist/index.css static/css/index.css",
+    "css:prd": "postcss --use postcss-cssnext --use autoprefixer --use postcss-font-magician --use cssnano -o dist/index.css static/css/index.css",
+    "js:dev": "browserify --debug -t babelify static/js/index.js > dist/index.js",
+    "js:prd": "browserify -t babelify static/js/index.js > dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/scra7ch/website.git"
+  },
+  "keywords": [
+    "scratch",
+    "website",
+    "digital"
+  ],
+  "author": "izolate <yoshtalwar@gmail.com> (http://izolate.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scra7ch/website/issues"
+  },
+  "homepage": "https://github.com/scra7ch/website#readme",
+  "dependencies": {
+    "autoprefixer": "^6.3.3",
+    "babel-preset-es2015": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "cssnano": "^3.5.2",
+    "postcss": "^5.0.16",
+    "postcss-cli": "^2.5.1",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-font-magician": "^1.4.0",
+    "pug-cli": "0.0.0"
+  }
+}

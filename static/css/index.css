@@ -195,3 +195,13 @@ section {
   line-height: 1.75em;
   color: var(--colorBodyText);
 }
+
+/* Footer */
+footer {
+  background-color: var(--colorBodyText);
+}
+
+footer img {
+  display: block;
+  margin: 2em auto;
+}

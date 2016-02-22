@@ -141,6 +141,30 @@ section {
   background-color: white;
 }
 
+section h2 {
+  position: relative;
+  height: 40px;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100px;
+  height: 40px;
+  margin-left: -50px;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  animation: shimmer .25s steps(2) infinite;
+  transition: none;
+  transform: scale(3);
+}
+
+section p {
+  line-height: 1.75em;
+}
+
 /* About */
 .about {
   padding: 6em 4em;
@@ -153,25 +177,11 @@ section {
 }
 
 .about__header {
-  position: relative;
-  height: 40px;
   margin-bottom: 2em;
 }
 
 .about__header::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 100px;
-  height: 40px;
-  margin-left: -50px;
   background-image: url('../img/how.svg');
-  background-position: center 0;
-  background-repeat: no-repeat;
-  animation: shimmer .25s steps(2) infinite;
-  transition: none;
-  transform: scale(3);
 }
 
 .about__header h2 {
@@ -194,8 +204,35 @@ section {
 }
 
 .about__box p {
-  line-height: 1.75em;
   color: var(--colorBodyText);
+}
+
+/* Contact */
+.contact {
+  padding: 4em 0;
+  background-color: var(--colorBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__item {
+  width: 300px;
+  margin: 0 1em;
+}
+
+.contact h2::after {
+  background-image: url('../img/call.svg');
+}
+
+.contact p {
+  padding-right: 4em;
+  color: white;
+}
+
+.contact p a {
+  text-decoration: none;
+  color: var(--colorYellow);
 }
 
 /* Footer */

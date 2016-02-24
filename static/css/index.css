@@ -33,7 +33,6 @@ body {
   min-height: 100vh;
   background-color: var(--colorBg);
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
 /* Helpers */

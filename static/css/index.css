@@ -8,6 +8,7 @@
   --easeOutQuad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
+@custom-media --viewport-big (width >= 1400px);
 @custom-media --viewport-small (width <= 720px);
 @custom-media --viewport-mini (width <= 500px);
 
@@ -146,6 +147,19 @@ body {
   margin-left: -20px;
   background: url('../img/arrow.svg') center 0 no-repeat;
   animation: drkatz .25s steps(2) infinite;
+}
+
+@media(--viewport-big) {
+  .hero h1 {
+    font-size: 4em;
+    max-width: 1000px;
+  }
+
+  .hero h1 span::after {
+    transform: scale(1.5);
+    left: 20px !important;
+  }
+
 }
 
 @media(--viewport-small) {

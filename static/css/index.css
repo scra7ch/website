@@ -14,6 +14,16 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background-color: var(--colorBg);
+  color: var(--colorYellow);
+}
+
+::selection {
+  background-color: var(--colorBg);
+  color: var(--colorYellow);
+}
+
 body {
   font-family: var(--fontFamily);
   font-size: var(--fontSizeBase);
@@ -128,12 +138,10 @@ body {
   position: absolute;
   bottom: 3em;
   left: 50%;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   margin-left: -20px;
   background: url('../img/arrow.svg') center 0 no-repeat;
-  border: 2px dotted var(--colorYellow);
-  border-radius: 50%;
   animation: shimmer .25s steps(2) infinite;
 }
 

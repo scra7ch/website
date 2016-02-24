@@ -163,12 +163,12 @@ body {
   }
 
   .hero h1 {
-    font-size: calc(var(--fontSizeH1) * .8);
+    font-size: calc(var(--fontSizeH1) * .7);
   }
 
   .hero h1 span::after {
-    left: -10px;
-    transform: scale(.8) translateX(-15px);
+    left: -15px;
+    transform: scale(.7) translateX(-22px);
 
   }
 }

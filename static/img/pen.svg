@@ -4,27 +4,29 @@
 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
 <g>
-	
-		<rect x="26.75" y="13.719" transform="matrix(-0.866 -0.5 0.5 -0.866 45.7615 66.2003)" fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="10" height="26.5"/>
-	
-		<polyline fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		34.911,13.494 36.411,10.896 43.34,14.896 41.84,17.494 	"/>
-	
-		<polyline fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		21.661,36.444 20.161,39.043 27.089,43.043 28.589,40.444 	"/>
-	
-		<polyline fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		20.161,39.043 20.125,47.104 27.089,43.043 	"/>
-</g>
-<g>
 	<g>
-		<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M18,47
-			c-0.354-0.029-0.685-0.066-0.996-0.111"/>
 		
-			<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.819,2.7284" d="
-			M14.385,46.152c-5.528-2.815,4.87-11.215-3.121-14.479"/>
-		<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M9.973,31.238
-			C9.668,31.153,9.344,31.074,9,31"/>
+			<rect x="30.58" y="13.721" transform="matrix(0.866 0.5 -0.5 0.866 18.2533 -14.1772)" fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="9.999" height="26.5"/>
+		
+			<polyline fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			38.741,13.494 40.241,10.896 47.17,14.896 45.67,17.494 		"/>
+		
+			<polyline fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			25.491,36.443 23.991,39.043 30.919,43.043 32.419,40.443 		"/>
+		
+			<polyline fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			23.991,39.043 23.955,47.104 30.919,43.043 		"/>
+	</g>
+	<g>
+		<g>
+			<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M21.83,47
+				c-0.354-0.029-0.685-0.066-0.996-0.111"/>
+			
+				<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.819,2.7284" d="
+				M18.215,46.152c-5.528-2.815,4.87-11.215-3.121-14.479"/>
+			<path fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.803,31.238
+				c-0.305-0.086-0.629-0.164-0.973-0.238"/>
+		</g>
 	</g>
 </g>
 </svg>
